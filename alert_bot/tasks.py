@@ -53,6 +53,6 @@ async def send_telegram():
     # Отправка сообщения с изображением
     message_text += "\n\n"
     message_text += "ССЫЛКА НА ДЕЙЛИ: https://meet.google.com/izk-wghu-sdg"
-    with open('img_14.png', 'rb') as img:
+    with open('img.png', 'rb') as img:
         media = InputMediaPhoto(media=img, caption=message_text, parse_mode='HTML')
         await bot.send_media_group(chat_id=chat_id, media=[media])
