@@ -5,6 +5,9 @@ import random
 from asgiref.sync import sync_to_async
 from telegram import Bot, InputMediaPhoto, InputMediaVideo
 from joke_bot.models import User, Joke
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 async def get_user_list():
