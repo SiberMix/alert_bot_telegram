@@ -20,6 +20,7 @@ class Joke(models.Model):
 class User(models.Model):
     username = models.CharField(max_length=255)
     absent = models.BooleanField(verbose_name='Отсутствие', default=False)
+    backend = models.BooleanField(verbose_name='Бекендер?', default=False)
 
     def __str__(self):
         return self.username

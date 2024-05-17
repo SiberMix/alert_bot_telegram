@@ -10,4 +10,4 @@ class Joke(admin.ModelAdmin):
 
 @admin.register(User)
 class User(admin.ModelAdmin):
-    list_display = ['username', 'absent']
+    list_display = ['username', 'absent', 'backend']
