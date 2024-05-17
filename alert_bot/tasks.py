@@ -20,8 +20,8 @@ async def get_random_joke():
 
 
 async def send_telegram():
-    bot_token = "6242307150:AAEmGth3OFS036PNEen1bjTUapjrvxZSfzY"
-    chat_id = '-4055169739'
+    bot_token = os.getenv('BOT_TOKEN')
+    chat_id = os.getenv('CHAT_ID')
     bot = Bot(token=bot_token)
     current_day_of_week = datetime.datetime.today().weekday()
     user_list = await get_user_list()
